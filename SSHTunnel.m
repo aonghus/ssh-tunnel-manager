@@ -351,7 +351,7 @@
 			hostPort = [ t objectForKey:@"port" ];
 		else
 			hostPort = [ t objectForKey:@"hostport" ];
-		[ arguments addObject: [NSString stringWithFormat:@"%@/%@/%@",
+		[ arguments addObject: [NSString stringWithFormat:@"%@:%@:%@",
 								[ t objectForKey:@"port"],
 								[ t objectForKey:@"host"],
 								hostPort
@@ -368,7 +368,7 @@
 			hostPort = [ t objectForKey:@"port" ];
 		else
 			hostPort = [ t objectForKey:@"hostport" ];
-		[ arguments addObject: [NSString stringWithFormat:@"%@/%@/%@",
+		[ arguments addObject: [NSString stringWithFormat:@"%@:%@:%@",
 								[ t objectForKey:@"port"],
 								[ t objectForKey:@"host"],
 								hostPort
